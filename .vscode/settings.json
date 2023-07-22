@@ -1,0 +1,33 @@
+{
+  "[liquid-css]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "sissel.shopify-liquid"
+  },
+  "[liquid]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "sissel.shopify-liquid"
+  },
+  "liquid.config.method": "workspace",
+  "liquid.completion.tags": true,
+  "liquid.completion.objects": true,
+  "liquid.completion.filters": true,
+  "liquid.completion.operators": true,
+  "liquid.completion.variables": true,
+  "liquid.completion.schema": true,
+  "liquid.validate.schema": true,
+  "liquid.hover.tags": true,
+  "liquid.hover.filters": true,
+  "liquid.hover.objects": true,
+  "liquid.hover.schema": true,
+  "liquid.engine": "shopify",
+  "liquid.files.shopify": {
+    "settings": "./config/settings_schema.json",
+    "locales": "./locales/en.default.json",
+    "sections": [
+      "./sections/*.liquid"
+    ],
+    "snippets": [
+      "./snippets/*.liquid"
+    ]
+  }
+}
