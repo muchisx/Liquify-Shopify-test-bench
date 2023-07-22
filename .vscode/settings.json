@@ -12,6 +12,8 @@
   "liquid.completion.objects": true,
   "liquid.completion.filters": true,
   "liquid.completion.operators": true,
+  "liquid.completion.properties": true,
+  "liquid.completion.sections": true,
   "liquid.completion.variables": true,
   "liquid.completion.schema": true,
   "liquid.validate.schema": true,
@@ -29,5 +31,5 @@
     "snippets": [
       "./snippets/*.liquid"
     ]
-  }
+  },
 }
