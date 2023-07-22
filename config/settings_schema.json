@@ -1,0 +1,57 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Test",
+    "theme_version": "1.0",
+    "theme_author": "Muchisx",
+    "theme_documentation_url": "https:\/\/github.com\/panoply\/vscode-liquid",
+    "theme_support_url": "https:\/\/github.com\/panoply\/vscode-liquid/issues"
+  },
+  {
+    "name": "settings-tests-first",
+    "settings": [
+      {
+        "type": "header",
+        "content": "header is valid input-setting type."
+      },
+      {
+        "type": "paragraph",
+        "content": "paragraph is valid input-setting type."
+      },
+      {
+        "type": "color",
+        "id": "test-color",
+        "label": "Test Color"
+      },
+      {
+        "type": "color_background",
+        "id": "test-color_background",
+        "label": "Test Color Background"
+      }
+    ]
+  },
+  {
+    "name": "settings-tests-second",
+    "settings": [
+      {
+        "type": "header",
+        "content": "header is valid input-setting type."
+      },
+      {
+        "type": "color",
+        "id": "test-color",
+        "label": "Test Color"
+      },
+      {
+        "type": "color_background",
+        "id": "test-color_background",
+        "label": "Test Color Background"
+      },
+      {
+        "type": "color_background",
+        "id": "test-color_background",
+        "label": "Test Color Background"
+      }
+    ]
+  }
+]
