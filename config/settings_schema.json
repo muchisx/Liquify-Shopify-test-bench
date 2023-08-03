@@ -20,12 +20,12 @@
       },
       {
         "type": "color",
-        "id": "test-color",
+        "id": "test_color",
         "label": "Test Color"
       },
       {
         "type": "color_background",
-        "id": "test-color_background",
+        "id": "test_color_background",
         "label": "Test Color Background"
       }
     ]
@@ -39,17 +39,12 @@
       },
       {
         "type": "color",
-        "id": "test-color",
+        "id": "test_color_2",
         "label": "Test Color"
       },
       {
         "type": "color_background",
-        "id": "test-color_background",
-        "label": "Test Color Background"
-      },
-      {
-        "type": "color_background",
-        "id": "test-color_background",
+        "id": "test_color_background_2",
         "label": "Test Color Background"
       }
     ]
