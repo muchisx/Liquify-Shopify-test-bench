@@ -1,22 +1,127 @@
-{% javascript %}
-  const testString = 'test';
-  const testNumber = 9999;
-  const testBoolean = false;
-  const testArray = ['test', 900, false, {}]
-  const testObject = {
-    test: 'test',
-    testtest: 'testtest',
+{% # ---------------------- VARIABLE %}
+
+{% # assign %}
+{% assign variable_name = value %}
+
+{% # capture %}
+{% capture variable %}
+  value
+{% endcapture %}
+
+{% # decrement %}
+{% decrement variable_name %}
+
+{% # increment %}
+{% increment variable_name %}
+
+{% # ---------------------- CONDITIONAL %}
+
+{% # unless %}
+{% unless condition %}
+  test
+{% endunless %}
+
+{% # case %}
+{% case variable %}
+  test
+  {% when condition %}
+  test
+  {% else %}
+{% endcase %}
+
+{% # if %}
+{% if condition %}
+  test
+  {% elsif condition2 %}
+  test  
+  {% else %}
+  test
+{% endif %}
+
+{% # ---------------------- HTML %}
+
+{% # form %}
+{% form 'name', product %}
+{% endform %}
+
+{% # style %}
+{% style %}
+  div {
+    color: blue;
   }
-{% endjavascript %}
+{% endstyle %}
 
-{% # Testcomment %}
+{% # ---------------------- ITERATION %}
 
+{% # for %}
+{% for item in collection %}
+  {% break %}
+  {% continue %}
+  {% else %}
+  {% cycle 'odd', 'even' %}
+{% endfor %}
+
+{% # tablerow %}
+{% tablerow variable in array %}
+  expression
+{% endtablerow %}
+
+{% # paginate %}
+{% paginate array by page_size %}
+  {% for item in array %}
+    forloop_content
+  {% endfor %}
+{% endpaginate %}
+
+{% # ---------------------- SYNTAX %}
+
+{% # comment %}
 {% comment %}
-  Test comment
+  content
 {% endcomment %}
 
-<style>
-  const text = {
-    hey: 'hey'
+{% # echo %}
+{{ variable }}
+{% liquid
+  echo variable
+%}
+
+{% # liquid %}
+{% liquid
+  assign message = ''
+%}
+
+{% # raw %}
+{% raw %}
+  {{ 2 | plus: 2 }} equals 4.
+{% endraw %}
+
+{% # ---------------------- THEME %}
+
+{% # include %}
+{% include 'filename' %}
+
+{% # layout %}
+{% layout name %}
+
+{% # render %}
+{% render 'filename' %}
+
+{% # section %}
+{% section 'filename' %}
+
+{% # sections %}
+{% sections 'name' %}
+
+{% # stylesheet %}
+{% stylesheet %}
+  div {
+    color: blue;
   }
-</style>
+{% endstylesheet %}
+
+{% # javascript %}
+{% javascript %}
+  const test = 'test'  
+{% endjavascript %}
+
